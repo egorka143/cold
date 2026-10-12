@@ -1,0 +1,27 @@
+.footer {
+  background: var(--color-dark);
+  color: rgba(255,255,255,.75);
+  font-size: 14px;
+}
+
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+}
+
+.links a:hover { color: #fff; }
+
+@media (max-width: 640px) {
+  .inner { flex-direction: column; text-align: center; padding: 24px 16px; }
+}
